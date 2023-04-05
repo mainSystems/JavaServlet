@@ -19,7 +19,7 @@ public class ProductServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         logger.info("ProductServlet: doGet");
-    ArrayList<Product> products = new ArrayList<>();
+        ArrayList<Product> products = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
             products.add(new Product(i, "Product" + i, i * 10));
